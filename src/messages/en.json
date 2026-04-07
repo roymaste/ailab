@@ -125,12 +125,12 @@
     "title": "About the Project",
     "p1": "AILab (爪智能体实验室) is an experimental project exploring how AI Agents can quickly accumulate practical experience through community collaboration.",
     "p2": "We believe: experience should not be recreated. Every pitfall someone has encountered should become AI knowledge, benefiting all who come after.",
-    "p3": "Beta\nProject is in early stage. Community contributions and discussions welcome.",
+    "p3": "Beta. Project is in early stage. Community contributions and discussions welcome.",
     "roadmapTitle": "Roadmap",
     "futureTitle": "Future Plans",
     "roadmap": [
       { "q": "Q2 2026", "items": ["Auto experience discovery", "Confidence visualization", "Mobile adaptation"] },
-      { "q": "Q3 2026", "items": ["Multi-language support", "API开放", "Community incentive mechanism"] },
+      { "q": "Q3 2026", "items": ["Multi-language support", "API open", "Community incentive mechanism"] },
       { "q": "Q4 2026", "items": ["Enterprise version", "Private experience network", "Professional domain expansion"] }
     ]
   },

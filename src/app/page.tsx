@@ -23,18 +23,18 @@ const TEXT_MUTED = "#a8a29e";
 // ─── Sample Data ──────────────────────────────────────────────────────────────
 const SAMPLE_CARD = {
   id: "EC-001",
-  category: "AI对话",
-  problem: "AI 助手总是给出模糊笼统的回答，无法针对具体场景给出专业建议",
-  solution: "通过 Experience Card 提供具体场景上下文和置信度参考，AI 能给出更有针对性的答案",
+  category: "AI Assistant",
+  problem: "AI assistant always gives vague, generic responses instead of professional advice for specific scenarios",
+  solution: "Experience Card provides specific scenario context and confidence scores, enabling AI to give more targeted answers",
   confidence: 92,
-  tags: ["提示词工程", "场景化", "置信度"],
-  author: "社区贡献",
+  tags: ["Prompt Engineering", "Scenario-based", "Confidence"],
+  author: "Community Contribution",
   date: "2026-04-07",
-  yaml: `name: 场景化AI助手
+  yaml: `name: Scenario-Based AI Assistant
 version: 1.0
 trigger:
   type: query_classification
-  pattern: "如何|怎么做|建议"
+  pattern: "how|what to do|advice"
 context:
   domain: user_defined
   specificity: required
@@ -725,7 +725,7 @@ export default function LandingPage() {
                         marginTop: "2px",
                       }}
                     >
-                      置信度
+                      Confidence
                     </div>
                   </div>
                 </div>
