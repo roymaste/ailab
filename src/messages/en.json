@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "experiences": "Experience Library",
+    "install": "Install",
+    "about": "About",
+    "installNow": "Install Now"
+  },
+  "hero": {
+    "eyebrow": "AI Agent Experience Hub · Beta",
+    "headline1": "Your AI.",
+    "headline2": "Gets Smarter Over Time",
+    "sub1": "Turn your AI实战 experience into reusable skill cards",
+    "sub2": "So everyone's AI improves together",
+    "value": "Every problem you solve is valuable experience. Submit your experience, and the AI learns automatically. The next person facing the same issue—their AI will know too.",
+    "cta1": "Install Skill in One Click",
+    "cta2": "Browse Experience Library",
+    "stats1": "Experience Cards",
+    "stats2": "Current Version",
+    "stats3": "Open Source"
+  },
+  "whatIs": {
+    "sectionLabel": "Concept",
+    "title": "What is an Experience Card",
+    "analogy": "Analogy",
+    "analogyTitle": "Medical Knowledge Network",
+    "analogy1": "A doctor publishes a new treatment in a top journal",
+    "analogy2": "All doctors automatically learn through continuing education",
+    "analogy3": "All patients benefit",
+    "systemLabel": "Our System",
+    "systemTitle": "AI Experience Network",
+    "system1": "You hit a problem in practice and find a solution",
+    "system2": "Submit an Experience Card",
+    "system3": "All users' AI learns automatically—you don't need to teach it again",
+    "vp1Title": "Personal Experience → AI Skills",
+    "vp1Body": "A problem that took you 2 hours to solve, submitted as structured experience in 5 minutes. The next person with the same issue—their AI already knows.",
+    "vp2Title": "One Person's Benefit → Everyone's Benefit",
+    "vp2Body": "Traditional approach is hand-holding. Now you just submit an experience card and every user's AI learns simultaneously—100x efficiency.",
+    "vp3Title": "The More You Share, The Stronger It Gets",
+    "vp3Body": "More community-contributed experience means stronger network effects. Every participant is both beneficiary and contributor."
+  },
+  "features": {
+    "sectionLabel": "Core Mechanism",
+    "title": "How Experience Cards Work",
+    "sampleCard": "Sample Experience Card",
+    "solution": "Solution",
+    "tags": "Tags",
+    "configYaml": "CONFIG.YAML",
+    "list": [
+      {
+        "label": "Network Effect of Experience",
+        "desc": "One person's hard-won experience, shared in structured form, helps all users' AI improve. Every submission makes the network stronger."
+      },
+      {
+        "label": "AI Auto-Learning",
+        "desc": "Submitted experiences are automatically converted into executable prompt configurations and injected into AI decision-making—no manual intervention needed."
+      },
+      {
+        "label": "Confidence System",
+        "desc": "Every recommendation has a confidence score. AI knows when to be confident and when to be conservative. Users have a reference too."
+      },
+      {
+        "label": "Community Co-Building",
+        "desc": "Open source, transparent, verifiable. Everyone can contribute experience, and anyone can question or correct. Quality guaranteed by collective intelligence."
+      }
+    ]
+  },
+  "howItWorks": {
+    "sectionLabel": "Workflow",
+    "title": "Three Simple Steps to Teach AI New Skills",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Submit Experience",
+        "desc": "Describe the problem scenario you encountered and how you solved it—natural language is fine."
+      },
+      {
+        "step": "02",
+        "title": "AI Auto-Structures",
+        "desc": "The system automatically converts your experience into a standardized Experience Card (YAML format)."
+      },
+      {
+        "step": "03",
+        "title": "Network-Wide Sync",
+        "desc": "Experience cards are distributed to all users via Skill. AI automatically invokes them when similar problems arise."
+      }
+    ]
+  },
+  "updates": {
+    "sectionLabel": "Continuous Iteration",
+    "title": "Latest Updates",
+    "badge": "Beta · Building",
+    "items": [
+      { "tag": "New Feature", "text": "Website redesigned and launched" },
+      { "tag": "Update", "text": "Added confidence visualization" },
+      { "tag": "Update", "text": "YAML import/export support" },
+      { "tag": "Content", "text": "First 12 experience cards online" }
+    ]
+  },
+  "install": {
+    "sectionLabel": "Quick Start",
+    "title": "Install Skill in One Click",
+    "desc": "After installation, your AI will automatically learn all experience cards contributed by the community—no extra configuration needed.",
+    "steps": [
+      {
+        "n": "1",
+        "title": "Open Terminal",
+        "desc": "Make sure OpenClaw is installed and running."
+      },
+      {
+        "n": "2",
+        "title": "Run Install Command",
+        "desc": "Copy the command below and paste it into the terminal."
+      },
+      {
+        "n": "3",
+        "title": "Start Using",
+        "desc": "After installation, AI automatically invokes experience cards when encountering relevant scenarios."
+      }
+    ],
+    "command": "openclaw skills add ailab-recall",
+    "copy": "Copy"
+  },
+  "about": {
+    "sectionLabel": "Project Background",
+    "title": "About the Project",
+    "p1": "AILab (爪智能体实验室) is an experimental project exploring how AI Agents can quickly accumulate practical experience through community collaboration.",
+    "p2": "We believe: experience should not be recreated. Every pitfall someone has encountered should become AI knowledge, benefiting all who come after.",
+    "p3": "Beta\nProject is in early stage. Community contributions and discussions welcome.",
+    "roadmapTitle": "Roadmap",
+    "futureTitle": "Future Plans",
+    "roadmap": [
+      { "q": "Q2 2026", "items": ["Auto experience discovery", "Confidence visualization", "Mobile adaptation"] },
+      { "q": "Q3 2026", "items": ["Multi-language support", "API开放", "Community incentive mechanism"] },
+      { "q": "Q4 2026", "items": ["Enterprise version", "Private experience network", "Professional domain expansion"] }
+    ]
+  },
+  "footerCta": {
+    "title": "Ready to make your AI smarter?",
+    "desc": "Join the community and build the AI experience network together",
+    "cta1": "Install Now",
+    "cta2": "Browse Experience Library"
+  },
+  "footer": {
+    "tagline": "AILab · AI Agent Experience Hub · Making AI smarter over time",
+    "status": "Open Source Community · Continuously Iterating"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "experiences": "经验库",
+    "install": "安装",
+    "about": "关于",
+    "installNow": "立即安装"
+  },
+  "hero": {
+    "eyebrow": "AI Agent Experience Hub · Beta",
+    "headline1": "你的 AI",
+    "headline2": "越用越专业",
+    "sub1": "把你和 AI 实战中的经验，变成可复用的技能卡片",
+    "sub2": "让所有人的 AI 共同进步",
+    "value": "每一次踩坑都是宝贵的经验。把你的经验提交上来，AI 会自动学习。下一个遇到同样问题的人，他的 AI 也会了。",
+    "cta1": "一键安装 Skill",
+    "cta2": "浏览经验库",
+    "stats1": "已上线经验卡",
+    "stats2": "当前版本",
+    "stats3": "社区共建"
+  },
+  "whatIs": {
+    "sectionLabel": "概念解释",
+    "title": "什么是 Experience Card",
+    "analogy": "类比",
+    "analogyTitle": "医学知识网络",
+    "analogy1": "一个医生在全球顶尖期刊发表了新疗法",
+    "analogy2": "所有医生通过继续教育自动学会",
+    "analogy3": "所有病人受益",
+    "systemLabel": "我们的系统",
+    "systemTitle": "AI 经验网络",
+    "system1": "你在实战中踩了一个坑并找到解决方案",
+    "system2": "提交 Experience Card",
+    "system3": "所有用户的 AI 自动学会，你不再需要重复教它",
+    "vp1Title": "个人经验 → AI 技能",
+    "vp1Body": "你花2小时踩出来的坑，5分钟提交成结构化经验，下一个人遇到同样问题，他的 AI 直接就会了。",
+    "vp2Title": "单人受益 → 全员受益",
+    "vp2Body": "传统方式是手把手教。现在你只需要提交经验卡，所有人的 AI 都能同步学会，效率提升 100 倍。",
+    "vp3Title": "越分享越强",
+    "vp3Body": "社区贡献的经验越多，网络效应越强。每个参与者既是受益者也是贡献者。"
+  },
+  "features": {
+    "sectionLabel": "核心机制",
+    "title": "Experience Card 如何运作",
+    "sampleCard": "示例 Experience Card",
+    "solution": "Solution",
+    "tags": "Tags",
+    "configYaml": "CONFIG.YAML",
+    "list": [
+      {
+        "label": "经验网络效应",
+        "desc": "一个人的踩坑经验，通过结构化分享，让所有用户的 AI 共同进步。每提交一次，网络就变强一分。"
+      },
+      {
+        "label": "AI 自动学习",
+        "desc": "提交的经验自动转化为可执行的 prompt 配置，注入到 AI 的决策流程中——无需人工干预。"
+      },
+      {
+        "label": "置信度系统",
+        "desc": "每条建议都有置信度标注。AI 知道什么时候该自信，什么时候该保守。用户也有参考依据。"
+      },
+      {
+        "label": "社区共建",
+        "desc": "开源、透明、可验证。每个人都可以贡献经验，也可以质疑和修正。质量由群体智慧保证。"
+      }
+    ]
+  },
+  "howItWorks": {
+    "sectionLabel": "工作流程",
+    "title": "简单三步，让 AI 学会新技能",
+    "steps": [
+      {
+        "step": "01",
+        "title": "提交经验",
+        "desc": "描述你遇到的问题场景，以及你是怎么解决的，用自然语言提交即可。"
+      },
+      {
+        "step": "02",
+        "title": "AI 自动结构化",
+        "desc": "系统自动将你的经验转化为标准化的 Experience Card（YAML 格式）。"
+      },
+      {
+        "step": "03",
+        "title": "全网同步生效",
+        "desc": "经验卡通过 Skill 分发给所有用户，下次遇到同类问题 AI 自动调用。"
+      }
+    ]
+  },
+  "updates": {
+    "sectionLabel": "持续迭代",
+    "title": "最新动态",
+    "badge": "Beta · 建设中",
+    "items": [
+      { "tag": "新功能", "text": "网站全新改版上线，欢迎体验" },
+      { "tag": "功能更新", "text": "新增置信度可视化展示" },
+      { "tag": "功能更新", "text": "支持 YAML 格式导入/导出" },
+      { "tag": "内容", "text": "首批 12 条经验卡上线" }
+    ]
+  },
+  "install": {
+    "sectionLabel": "快速开始",
+    "title": "一键安装 Skill",
+    "desc": "安装后，你的 AI 将自动学习社区贡献的所有经验卡，无需额外配置。",
+    "steps": [
+      {
+        "n": "1",
+        "title": "打开终端",
+        "desc": "确保已安装 OpenClaw 并运行。"
+      },
+      {
+        "n": "2",
+        "title": "运行安装命令",
+        "desc": "复制下方命令，粘贴到终端执行。"
+      },
+      {
+        "n": "3",
+        "title": "开始使用",
+        "desc": "安装完成后，AI 自动在遇到相关场景时调用经验卡。"
+      }
+    ],
+    "command": "openclaw skills add ailab-recall",
+    "copy": "复制"
+  },
+  "about": {
+    "sectionLabel": "项目背景",
+    "title": "关于项目",
+    "p1": "爪智能体实验室（AILab）是一个实验性项目，探索如何通过社区协作让 AI Agent 快速积累实战经验。",
+    "p2": "我们相信：经验不应该重复创造。每一个人踩过的坑，都应该变成 AI 的知识资产，让后来者直接受益。",
+    "p3": "Beta\n项目处于早期阶段，欢迎社区贡献经验、参与讨论。",
+    "roadmapTitle": "项目背景",
+    "futureTitle": "未来规划",
+    "roadmap": [
+      { "q": "Q2 2026", "items": ["自动经验发现", "置信度可视化增强", "移动端适配"] },
+      { "q": "Q3 2026", "items": ["多语言支持", "API 开放", "社区激励机制"] },
+      { "q": "Q4 2026", "items": ["企业版", "私有经验网络", "专业领域扩展"] }
+    ]
+  },
+  "footerCta": {
+    "title": "准备好让 AI 更专业了吗？",
+    "desc": "加入社区，一起构建 AI 经验网络",
+    "cta1": "立即安装",
+    "cta2": "浏览经验库"
+  },
+  "footer": {
+    "tagline": "AILab · AI Agent Experience Hub · 让AI越用越专业",
+    "status": "开源社区 · 持续迭代中"
+  }
+}
