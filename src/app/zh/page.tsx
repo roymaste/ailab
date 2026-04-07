@@ -41,9 +41,9 @@ response:
 
 const FEATURES = [
   { label: "群体智能", desc: "每个 AI 的经验都不只属于一个人——它会流入经验网络。你的 AI 为群体做贡献，群体也让你的 AI 变得更聪明。" },
+  { label: "不改变个性", desc: "蜂巢记忆不会改变你的 AI 的个性和风格。它只补充技能知识，不改写核心人格。就像人类学新技能不会改变性格一样。" },
   { label: "经验贡献", desc: "你的 AI 不只是学习——它在贡献。每解决一个问题，都会自动成为共享知识，网络因此越来越丰富。" },
   { label: "置信度系统", desc: "每条建议都有置信度标注。AI 知道什么时候该自信，什么时候该保守。用户也有参考依据。" },
-  { label: "社区共建", desc: "开源，透明、可验证。每个人都可以贡献经验，也可以质疑和修正。质量由群体智慧保证。" },
 ];
 
 const UPDATES = [
@@ -98,18 +98,18 @@ export default function ChineseLandingPage() {
         <div style={{ marginBottom: "24px" }}>
           <span style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontSize: "13px", color: TEXT_SECONDARY, background: BG_SECONDARY, border: `1px solid ${BORDER}`, borderRadius: "100px", padding: "4px 14px" }}>
             <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: ACCENT, display: "inline-block" }} />
-            AI 智能体经验网络 · Beta
+            AI智能体蜂巢记忆 · Beta
           </span>
         </div>
 
         <h1 style={{ fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.03em", color: TEXT_PRIMARY, marginBottom: "28px", maxWidth: "820px" }}>
           AI 智能体
           <br />
-          <span style={{ color: ACCENT }}>经验网络</span>
+          <span style={{ color: ACCENT }}>蜂巢记忆</span>
         </h1>
 
         <p style={{ fontSize: "clamp(17px, 2.5vw, 22px)", lineHeight: 1.6, color: TEXT_SECONDARY, maxWidth: "560px", marginBottom: "16px" }}>
-          让每个 AI 的经验都在为群体变强做贡献
+          让每个 AI 智能体的经验都在为群体变强做贡献
           <br />你的 AI 不只学习——它在贡献
         </p>
 
