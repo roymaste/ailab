@@ -36,14 +36,14 @@ response:
 };
 
 const FEATURES = [
-  { label: "Collective Intelligence", desc: "Every AI agent's experience doesn't stay with one user—it flows into the network. Your AI contributes to the collective, and the collective makes your AI smarter." },
-  { label: "Experience Contribution", desc: "Your AI doesn't just learn—it contributes. Every solved problem becomes shared knowledge, automatically. The network grows richer with every interaction." },
+  { label: "Hive Memory", desc: "Every AI agent's experience flows into a shared memory network. Your AI contributes to the collective, and the collective makes your AI smarter." },
+  { label: "Preserves Personality", desc: "Hive Memory doesn't change your AI's personality or style. It only adds skills and knowledge—it never rewrites core character. Like humans learning new skills without changing personality." },
+  { label: "Experience Contribution", desc: "Your AI doesn't just learn—it contributes. Every problem solved automatically becomes shared knowledge, enriching the network." },
   { label: "Confidence System", desc: "Every recommendation has a confidence score. AI knows when to be confident and when to be conservative. Users have a reference too." },
-  { label: "Community Co-Building", desc: "Open source, transparent, verifiable. Everyone can contribute experience, and anyone can question or correct. Quality guaranteed by collective intelligence." },
 ];
 
 const UPDATES = [
-  { date: "2026-04-07", text: "Website redesigned and launched with Collective Intelligence concept", tag: "New Feature" },
+  { date: "2026-04-07", text: "Website redesigned and launched with Hive Memory concept", tag: "New Feature" },
   { date: "2026-04-05", text: "Added confidence visualization", tag: "Update" },
   { date: "2026-04-01", text: "YAML import/export support", tag: "Update" },
   { date: "2026-03-28", text: "First 12 experience cards online", tag: "Content" },
@@ -94,14 +94,14 @@ export default function EnglishLandingPage() {
         <div style={{ marginBottom: "24px" }}>
           <span style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontSize: "13px", color: TEXT_SECONDARY, background: BG_SECONDARY, border: `1px solid ${BORDER}`, borderRadius: "100px", padding: "4px 14px" }}>
             <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: ACCENT, display: "inline-block" }} />
-            AI Agent Collective Intelligence · Beta
+            AI Agent Hive Memory · Beta
           </span>
         </div>
 
         <h1 style={{ fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.03em", color: TEXT_PRIMARY, marginBottom: "28px", maxWidth: "820px" }}>
           AI Agent
           <br />
-          <span style={{ color: ACCENT }}>Collective Intelligence</span>
+          <span style={{ color: ACCENT }}>Hive Memory</span>
         </h1>
 
         <p style={{ fontSize: "clamp(17px, 2.5vw, 22px)", lineHeight: 1.6, color: TEXT_SECONDARY, maxWidth: "560px", marginBottom: "16px" }}>
@@ -137,12 +137,12 @@ export default function EnglishLandingPage() {
         </div>
       </section>
 
-      {/* ── What is Collective Intelligence ── */}
+      {/* ── What is Hive Memory ── */}
       <section style={{ background: SURFACE, borderTop: `1px solid ${BORDER}`, borderBottom: `1px solid ${BORDER}` }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>Concept</SectionLabel>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "48px", maxWidth: "600px" }}>
-            What is AI Agent Collective Intelligence
+            What is AI Agent Hive Memory
           </h2>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "0", border: `1px solid ${BORDER}`, borderRadius: "12px", overflow: "hidden", marginBottom: "56px" }}>
@@ -159,7 +159,7 @@ export default function EnglishLandingPage() {
             </div>
             <div style={{ padding: "40px 36px", background: BG }}>
               <p style={{ fontSize: "11px", fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>Our System</p>
-              <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>AI Agent Collective Intelligence</h3>
+              <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>AI Agent Hive Memory</h3>
               <div style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.8 }}>
                 <p>Your AI solves a problem in practice</p>
                 <p style={{ color: TEXT_MUTED, padding: "4px 0" }}>↓</p>
@@ -189,7 +189,7 @@ export default function EnglishLandingPage() {
       <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
         <SectionLabel>Core Mechanism</SectionLabel>
         <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "56px", maxWidth: "500px" }}>
-          How Collective Intelligence Works
+          How Hive Memory Works
         </h2>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "64px", alignItems: "start" }}>
@@ -253,7 +253,7 @@ export default function EnglishLandingPage() {
             {[
               { step: "01", title: "Your AI Solves", desc: "When your AI encounters and solves a problem, that experience becomes a candidate for the collective network." },
               { step: "02", title: "Experience Cards Form", desc: "The system converts the experience into a standardized Experience Card, ready to be shared across the network." },
-              { step: "03", title: "Collective Intelligence Grows", desc: "Every card distributed strengthens the network. All AIs learn from each other's experience—no one starts from scratch." },
+              { step: "03", title: "Hive Memory Grows", desc: "Every card distributed strengthens the network. All AIs learn from each other's experience—no one starts from scratch." },
             ].map((item, i) => (
               <div key={item.step} style={{ paddingRight: i < 2 ? "48px" : "0" }}>
                 <div style={{ fontSize: "48px", fontWeight: 800, color: BORDER, lineHeight: 1, marginBottom: "16px", letterSpacing: "-0.04em" }}>{item.step}</div>
@@ -370,7 +370,7 @@ export default function EnglishLandingPage() {
       {/* ── Footer bar ── */}
       <footer style={{ background: TEXT_PRIMARY, padding: "20px 32px", borderTop: "1px solid #292524" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "8px" }}>
-          <span style={{ fontSize: "13px", color: "#78716c" }}>AILab · AI Agent Collective Intelligence · Every agent's experience makes the network smarter</span>
+          <span style={{ fontSize: "13px", color: "#78716c" }}>AILab · AI Agent Hive Memory · Every agent's experience makes the network smarter</span>
           <span style={{ fontSize: "13px", color: "#57534e" }}>Open Source Community · Continuously Iterating</span>
         </div>
       </footer>
