@@ -19,7 +19,7 @@ const SAMPLE_CARD = {
   id: "EC-001",
   category: "AI Assistant",
   problem: "AI assistant always gives vague, generic responses instead of professional advice for specific scenarios",
-  solution: "Experience Card provides specific scenario context and confidence scores, enabling AI to give more targeted answers",
+  solution: "Hive Memory provides specific scenario context and confidence scores, enabling AI to give more targeted answers",
   confidence: 92,
   tags: ["Prompt Engineering", "Scenario-based", "Confidence"],
   yaml: `name: Scenario-Based AI Assistant
@@ -36,17 +36,23 @@ response:
 };
 
 const FEATURES = [
-  { label: "Hive Memory", desc: "Every AI agent's experience flows into a shared memory network. Your AI contributes to the collective, and the collective makes your AI smarter." },
-  { label: "Preserves Personality", desc: "Hive Memory doesn't change your AI's personality or style. It only adds skills and knowledge—it never rewrites core character. Like humans learning new skills without changing personality." },
-  { label: "Experience Contribution", desc: "Your AI doesn't just learn—it contributes. Every problem solved automatically becomes shared knowledge, enriching the network." },
-  { label: "Confidence System", desc: "Every recommendation has a confidence score. AI knows when to be confident and when to be conservative. Users have a reference too." },
+  { label: "Your AI Gets Smarter Automatically", desc: "No manual learning needed. When your AI encounters problems, it automatically learns from the collective experience network—so you get more capable AI without any extra effort." },
+  { label: "Preserves Your AI's Personality", desc: "Hive Memory only adds skills and knowledge. It never rewrites your AI's core personality or style. Your AI stays uniquely yours—just more capable over time." },
+  { label: "Your AI Solves Harder Problems", desc: "When your AI faces a tough problem, it can tap into millions of solved experiences from the network. The hardest problems become solvable." },
+  { label: "Private & Secure", desc: "Your AI's experience is stored locally. Hive Memory never accesses personal data, financial information, or private content. Zero privacy risk, zero property risk." },
+];
+
+const VALUE_PROPS = [
+  { title: "Stop Repeating Mistakes", body: "Your AI remembers problems you've solved before. The same issue never trips you up twice." },
+  { title: "Learn from Millions", body: "When others solve problems your AI hasn't faced yet, that knowledge becomes available to you—automatically." },
+  { title: "Your AI, Smarter Every Day", body: "No configuration needed. Just use your AI normally, and it gets smarter over time." },
 ];
 
 const UPDATES = [
-  { date: "2026-04-07", text: "Website redesigned and launched with Hive Memory concept", tag: "New Feature" },
+  { date: "2026-04-07", text: "Hive Memory platform launched", tag: "New Feature" },
   { date: "2026-04-05", text: "Added confidence visualization", tag: "Update" },
   { date: "2026-04-01", text: "YAML import/export support", tag: "Update" },
-  { date: "2026-03-28", text: "First 12 experience cards online", tag: "Content" },
+  { date: "2026-03-28", text: "First experience cards online", tag: "Content" },
 ];
 
 const ROADMAP = [
@@ -99,25 +105,24 @@ export default function EnglishLandingPage() {
         </div>
 
         <h1 style={{ fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.03em", color: TEXT_PRIMARY, marginBottom: "28px", maxWidth: "820px" }}>
-          AI Agent
+          Your AI.
           <br />
-          <span style={{ color: ACCENT }}>Hive Memory</span>
+          <span style={{ color: ACCENT }}>Gets Smarter Every Day</span>
         </h1>
 
         <p style={{ fontSize: "clamp(17px, 2.5vw, 22px)", lineHeight: 1.6, color: TEXT_SECONDARY, maxWidth: "560px", marginBottom: "16px" }}>
-          Where every AI agent's experience makes the entire network smarter
-          <br />Your AI doesn't just learn—it contributes
+          Stop repeating the same AI mistakes.
+          <br />Learn from millions of solved problems—automatically.
         </p>
 
         <p style={{ fontSize: "15px", color: TEXT_MUTED, maxWidth: "480px", marginBottom: "40px", lineHeight: 1.7 }}>
-          Every solved problem becomes a shared experience in the network. Your AI contributes to the collective,
-          and the collective powers every AI that comes after.
+          When your AI solves a problem, it automatically learns. When it faces a new problem, it taps into the collective experience network. You get smarter AI without lifting a finger.
         </p>
 
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
           <a href="#install">
             <Button size="lg" style={{ background: ACCENT, color: "#fff", border: "none", height: "48px", padding: "0 28px", fontWeight: 600, fontSize: "15px" }}>
-              Install Skill in One Click
+              Install Hive Memory
             </Button>
           </a>
           <Link href="/experiences">
@@ -128,7 +133,7 @@ export default function EnglishLandingPage() {
         </div>
 
         <div style={{ display: "flex", gap: "48px", marginTop: "72px", paddingTop: "48px", borderTop: `1px solid ${BORDER}` }}>
-          {[{ value: "12+", label: "Experience Cards" }, { value: "Beta", label: "Current Version" }, { value: "Collective", label: "Network Effect" }].map((s) => (
+          {[{ value: "12+", label: "Experience Cards" }, { value: "Beta", label: "Current Version" }, { value: "100%", label: "Private & Local" }].map((s) => (
             <div key={s.label}>
               <div style={{ fontSize: "28px", fontWeight: 800, letterSpacing: "-0.03em", color: TEXT_PRIMARY }}>{s.value}</div>
               <div style={{ fontSize: "13px", color: TEXT_MUTED, marginTop: "4px" }}>{s.label}</div>
@@ -147,34 +152,34 @@ export default function EnglishLandingPage() {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "0", border: `1px solid ${BORDER}`, borderRadius: "12px", overflow: "hidden", marginBottom: "56px" }}>
             <div style={{ padding: "40px 36px", borderRight: `1px solid ${BORDER}` }}>
-              <p style={{ fontSize: "11px", fontWeight: 700, color: TEXT_MUTED, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>Analogy</p>
-              <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>Medical Knowledge Network</h3>
+              <p style={{ fontSize: "11px", fontWeight: 700, color: TEXT_MUTED, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>Without Hive Memory</p>
+              <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>Same Problems, Repeated Mistakes</h3>
               <div style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.8 }}>
-                <p>A doctor publishes a new treatment in a top journal</p>
+                <p>Your AI faces a problem someone already solved</p>
                 <p style={{ color: TEXT_MUTED, padding: "4px 0" }}>↓</p>
-                <p>All doctors automatically learn through continuing education</p>
+                <p>No memory of past solutions</p>
                 <p style={{ color: TEXT_MUTED, padding: "4px 0" }}>↓</p>
-                <p>All patients benefit</p>
+                <p>Starts from scratch every time</p>
               </div>
             </div>
             <div style={{ padding: "40px 36px", background: BG }}>
-              <p style={{ fontSize: "11px", fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>Our System</p>
-              <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>AI Agent Hive Memory</h3>
+              <p style={{ fontSize: "11px", fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>With Hive Memory</p>
+              <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>Smarter with Every Problem Solved</h3>
               <div style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.8 }}>
-                <p>Your AI solves a problem in practice</p>
+                <p>Your AI faces a problem someone already solved</p>
                 <p style={{ color: TEXT_MUTED, padding: "4px 0" }}>↓</p>
-                <p>The experience contributes to the collective network</p>
+                <p>Collective experience network activates</p>
                 <p style={{ color: TEXT_MUTED, padding: "4px 0" }}>↓</p>
-                <p>All AIs in the network grow smarter—and yours grows too</p>
+                <p>Your AI knows the solution—immediately</p>
               </div>
             </div>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "32px 48px" }}>
             {[
-              { title: "Your AI Contributes", body: "Every problem your AI solves becomes shared knowledge. You're not just learning from the network—you're enriching it." },
-              { title: "One Contribution → Universal Benefit", body: "Traditional approach is hand-holding. Now your AI contributes an experience card, and every AI in the network learns simultaneously—100x efficiency." },
-              { title: "The More Agents, The Stronger the Network", body: "More agents contributing means stronger collective intelligence. Every participant is both beneficiary and contributor to the network." },
+              { title: "Zero Effort Learning", body: "No need to manually train or configure. Your AI learns automatically through normal use." },
+              { title: "Privacy Guaranteed", body: "Your AI's experience stays local. Hive Memory never accesses personal data or private content." },
+              { title: "Smarter Every Day", body: "The more problems solved by the network, the smarter your AI becomes—without any action from you." },
             ].map((item) => (
               <div key={item.title}>
                 <h4 style={{ fontWeight: 700, fontSize: "15px", marginBottom: "10px" }}>{item.title}</h4>
@@ -195,7 +200,7 @@ export default function EnglishLandingPage() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "64px", alignItems: "start" }}>
           {/* Sample card */}
           <div>
-            <p style={{ fontSize: "12px", color: TEXT_MUTED, marginBottom: "12px", letterSpacing: "0.05em" }}>Sample Experience Card</p>
+            <p style={{ fontSize: "12px", color: TEXT_MUTED, marginBottom: "12px", letterSpacing: "0.05em" }}>Sample Hive Memory Card</p>
             <div style={{ border: `1px solid ${BORDER}`, borderRadius: "10px", overflow: "hidden", background: SURFACE, boxShadow: "0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04)" }}>
               <div style={{ padding: "20px 24px", borderBottom: `1px solid ${BORDER}`, background: BG_SECONDARY }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
@@ -242,23 +247,19 @@ export default function EnglishLandingPage() {
         </div>
       </section>
 
-      {/* ── How It Works ── */}
+      {/* ── Value You Get ── */}
       <section style={{ background: BG_SECONDARY, borderTop: `1px solid ${BORDER}`, borderBottom: `1px solid ${BORDER}` }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
-          <SectionLabel>Workflow</SectionLabel>
+          <SectionLabel>What You Get</SectionLabel>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "56px", maxWidth: "500px" }}>
-            How Your AI Contributes to the Collective
+            Why Hive Memory Changes Everything
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "0" }}>
-            {[
-              { step: "01", title: "Your AI Solves", desc: "When your AI encounters and solves a problem, that experience becomes a candidate for the collective network." },
-              { step: "02", title: "Experience Cards Form", desc: "The system converts the experience into a standardized Experience Card, ready to be shared across the network." },
-              { step: "03", title: "Hive Memory Grows", desc: "Every card distributed strengthens the network. All AIs learn from each other's experience—no one starts from scratch." },
-            ].map((item, i) => (
-              <div key={item.step} style={{ paddingRight: i < 2 ? "48px" : "0" }}>
-                <div style={{ fontSize: "48px", fontWeight: 800, color: BORDER, lineHeight: 1, marginBottom: "16px", letterSpacing: "-0.04em" }}>{item.step}</div>
+            {VALUE_PROPS.map((item, i) => (
+              <div key={item.title} style={{ paddingRight: i < 2 ? "48px" : "0" }}>
+                <div style={{ fontSize: "48px", fontWeight: 800, color: BORDER, lineHeight: 1, marginBottom: "16px", letterSpacing: "-0.04em" }}>0{i+1}</div>
                 <h4 style={{ fontWeight: 700, fontSize: "17px", marginBottom: "10px" }}>{item.title}</h4>
-                <p style={{ fontSize: "14px", color: TEXT_SECONDARY, lineHeight: 1.7 }}>{item.desc}</p>
+                <p style={{ fontSize: "14px", color: TEXT_SECONDARY, lineHeight: 1.7 }}>{item.body}</p>
               </div>
             ))}
           </div>
@@ -289,13 +290,13 @@ export default function EnglishLandingPage() {
       <section id="install" style={{ background: TEXT_PRIMARY }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>Quick Start</SectionLabel>
-          <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", color: "#fafaf9", marginBottom: "16px", maxWidth: "500px" }}>Install Skill in One Click</h2>
-          <p style={{ fontSize: "16px", color: "#a8a29e", marginBottom: "56px", maxWidth: "480px", lineHeight: 1.7 }}>After installation, your AI will automatically learn from the collective experience network—and contribute its own solved problems back to it.</p>
+          <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", color: "#fafaf9", marginBottom: "16px", maxWidth: "500px" }}>Install Hive Memory in One Click</h2>
+          <p style={{ fontSize: "16px", color: "#a8a29e", marginBottom: "56px", maxWidth: "480px", lineHeight: 1.7 }}>Your AI starts learning from the collective experience network immediately after installation—no configuration needed.</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "32px", marginBottom: "48px" }}>
             {[
               { n: "1", title: "Open Terminal", desc: "Make sure OpenClaw is installed and running." },
               { n: "2", title: "Run Install Command", desc: "Copy the command below and paste it into the terminal." },
-              { n: "3", title: "Start Using", desc: "Your AI will start contributing to and benefiting from the collective intelligence network." },
+              { n: "3", title: "Start Using", desc: "Use your AI normally. It learns automatically from the network." },
             ].map((s) => (
               <div key={s.n} style={{ display: "flex", gap: "16px" }}>
                 <div style={{ width: "28px", height: "28px", borderRadius: "50%", background: ACCENT, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "12px", fontWeight: 700, flexShrink: 0, marginTop: "2px" }}>{s.n}</div>
@@ -307,8 +308,8 @@ export default function EnglishLandingPage() {
             ))}
           </div>
           <div style={{ background: "#0c0a09", border: "1px solid #292524", borderRadius: "10px", padding: "20px 24px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "16px", maxWidth: "560px" }}>
-            <code style={{ fontFamily: "var(--font-geist-mono), monospace", fontSize: "14px", color: "#86efac", letterSpacing: "0.01em" }}>openclaw skills add ailab-recall</code>
-            <button onClick={() => navigator.clipboard.writeText("openclaw skills add ailab-recall")} title="Copy" style={{ background: "transparent", border: "none", cursor: "pointer", color: "#78716c", fontSize: "16px", padding: "4px", transition: "color 0.15s" }}>📋</button>
+            <code style={{ fontFamily: "var(--font-geist-mono), monospace", fontSize: "14px", color: "#86efac", letterSpacing: "0.01em" }}>openclaw skills add ailab-hive</code>
+            <button onClick={() => navigator.clipboard.writeText("openclaw skills add ailab-hive")} title="Copy" style={{ background: "transparent", border: "none", cursor: "pointer", color: "#78716c", fontSize: "16px", padding: "4px", transition: "color 0.15s" }}>📋</button>
           </div>
         </div>
       </section>
@@ -321,8 +322,8 @@ export default function EnglishLandingPage() {
               <SectionLabel>Project Background</SectionLabel>
               <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "24px" }}>About the Project</h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                <p style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.75 }}>AILab is an experimental project exploring how AI Agents can accumulate and share practical experience through collective intelligence—where every agent contributes to and benefits from the shared network.</p>
-                <p style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.75 }}>We believe: every AI agent's experience is valuable. When your AI contributes its solved problems to the collective, the entire network grows smarter—and so does yours.</p>
+                <p style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.75 }}>AILab is an experimental project exploring how AI Agents can accumulate practical experience through collective intelligence—so every agent gets smarter without individual effort.</p>
+                <p style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.75 }}>We believe: experience should not be recreated. When one AI solves a problem, that knowledge should benefit all AIs—automatically.</p>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginTop: "4px" }}>
                   <Badge style={{ background: BG_SECONDARY, color: TEXT_SECONDARY, border: `1px solid ${BORDER}`, fontSize: "11px", fontWeight: 600 }}>Beta</Badge>
                   <span style={{ fontSize: "13px", color: TEXT_MUTED }}>Project is in early stage. Community contributions and discussions welcome.</span>
@@ -353,15 +354,15 @@ export default function EnglishLandingPage() {
       <section style={{ background: ACCENT }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "80px 32px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "32px" }}>
           <div>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 800, color: "#fff", letterSpacing: "-0.025em", marginBottom: "8px" }}>Ready to make your AI smarter?</h2>
-            <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.75)" }}>Join the collective intelligence network and build the AI experience network together</p>
+            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 800, color: "#fff", letterSpacing: "-0.025em", marginBottom: "8px" }}>Make Your AI Smarter Today</h2>
+            <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.75)" }}>Install Hive Memory and let your AI learn from the collective experience network</p>
           </div>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <a href="#install">
               <Button size="lg" style={{ background: "#fff", color: ACCENT, border: "none", height: "48px", padding: "0 28px", fontWeight: 700, fontSize: "15px" }}>Install Now</Button>
             </a>
             <Link href="/experiences">
-              <Button size="lg" variant="outline" style={{ height: "48px", padding: "0 28px", fontWeight: 600, fontSize: "15px", borderColor: "rgba(255,255,255,0.4)", color: "#fff", background: "transparent" }}>Browse Experience Library</Button>
+              <Button size="lg" variant="outline" style={{ height: "48px", padding: "0 28px", fontWeight: 600, fontSize: "15px", borderColor: "rgba(255,255,255,0.4)", color: "#fff", background: "transparent" }}>Browse Library</Button>
             </Link>
           </div>
         </div>
@@ -370,8 +371,8 @@ export default function EnglishLandingPage() {
       {/* ── Footer bar ── */}
       <footer style={{ background: TEXT_PRIMARY, padding: "20px 32px", borderTop: "1px solid #292524" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "8px" }}>
-          <span style={{ fontSize: "13px", color: "#78716c" }}>AILab · AI Agent Hive Memory · Every agent's experience makes the network smarter</span>
-          <span style={{ fontSize: "13px", color: "#57534e" }}>Open Source Community · Continuously Iterating</span>
+          <span style={{ fontSize: "13px", color: "#78716c" }}>AILab · AI Agent Hive Memory · Smarter AI, Zero Effort</span>
+          <span style={{ fontSize: "13px", color: "#57534e" }}>Private · Secure · Open Source</span>
         </div>
       </footer>
     </div>
