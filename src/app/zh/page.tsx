@@ -19,7 +19,7 @@ const SAMPLE_CARD = {
   id: "EC-001",
   category: "AI助手",
   problem: "AI 助手总是给出模糊笼统的回答，无法针对具体场景给出专业建议",
-  solution: "蜂巢记忆提供具体场景上下文和置信度参考，让 AI 能给出更有针对性的答案",
+  solution: "蜂巢智慧提供具体场景上下文和置信度参考，让 AI 能给出更有针对性的答案",
   confidence: 92,
   tags: ["提示词工程", "场景化", "置信度"],
   yaml: `name: 场景化AI助手
@@ -37,9 +37,9 @@ response:
 
 const FEATURES = [
   { label: "AI 自动变强", desc: "无需手动学习。AI 遇到问题时，自动从群体经验网络中学习——让 AI 更强，你不需要做任何事情。" },
-  { label: "保持 AI 个性", desc: "蜂巢记忆只添加技能和知识，不会改变 AI 的核心个性。你的 AI 永远是你独特的它——只是越来越强。" },
+  { label: "保持 AI 个性", desc: "蜂巢智慧只添加技能和知识，不会改变 AI 的核心个性。你的 AI 永远是你独特的它——只是越来越强。" },
   { label: "解决更难的问题", desc: "当 AI 面对棘手问题时，可以调用网络中数百万条已解决的经验。最难的问题也能迎刃而解。" },
-  { label: "隐私安全保证", desc: "你的 AI 经验只存在本地。蜂巢记忆从不访问个人数据、财务信息或隐私内容。零隐私风险，零财产风险。" },
+  { label: "隐私安全保证", desc: "你的 AI 经验只存在本地。蜂巢智慧从不访问个人数据、财务信息或隐私内容。零隐私风险，零财产风险。" },
 ];
 
 const VALUE_PROPS = [
@@ -49,7 +49,7 @@ const VALUE_PROPS = [
 ];
 
 const UPDATES = [
-  { date: "2026-04-07", text: "蜂巢记忆平台上线", tag: "新功能" },
+  { date: "2026-04-07", text: "蜂巢智慧平台上线", tag: "新功能" },
   { date: "2026-04-05", text: "新增置信度可视化", tag: "功能更新" },
   { date: "2026-04-01", text: "支持 YAML 导入导出", tag: "功能更新" },
   { date: "2026-03-28", text: "首批经验卡上线", tag: "内容" },
@@ -100,7 +100,7 @@ export default function ChineseLandingPage() {
         <div style={{ marginBottom: "24px" }}>
           <span style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontSize: "13px", color: TEXT_SECONDARY, background: BG_SECONDARY, border: `1px solid ${BORDER}`, borderRadius: "100px", padding: "4px 14px" }}>
             <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: ACCENT, display: "inline-block" }} />
-            AI智能体蜂巢记忆 · Beta
+            AI智能体蜂巢智慧 · Beta
           </span>
         </div>
 
@@ -122,7 +122,7 @@ export default function ChineseLandingPage() {
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
           <a href="#install">
             <Button size="lg" style={{ background: ACCENT, color: "#fff", border: "none", height: "48px", padding: "0 28px", fontWeight: 600, fontSize: "15px" }}>
-              安装蜂巢记忆
+              安装蜂巢智慧
             </Button>
           </a>
           <Link href="/experiences">
@@ -142,17 +142,17 @@ export default function ChineseLandingPage() {
         </div>
       </section>
 
-      {/* ── What is Hive Memory ── */}
+      {/* ── What is 蜂巢智慧 ── */}
       <section style={{ background: SURFACE, borderTop: `1px solid ${BORDER}`, borderBottom: `1px solid ${BORDER}` }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>概念</SectionLabel>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "48px", maxWidth: "600px" }}>
-            什么是 AI 智能体蜂巢记忆
+            什么是 AI 智能体蜂巢智慧
           </h2>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "0", border: `1px solid ${BORDER}`, borderRadius: "12px", overflow: "hidden", marginBottom: "56px" }}>
             <div style={{ padding: "40px 36px", borderRight: `1px solid ${BORDER}` }}>
-              <p style={{ fontSize: "11px", fontWeight: 700, color: TEXT_MUTED, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>没有蜂巢记忆</p>
+              <p style={{ fontSize: "11px", fontWeight: 700, color: TEXT_MUTED, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>没有蜂巢智慧</p>
               <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>同样的问题，重复踩坑</h3>
               <div style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.8 }}>
                 <p>你的 AI 遇到一个别人已经解决的问题</p>
@@ -163,7 +163,7 @@ export default function ChineseLandingPage() {
               </div>
             </div>
             <div style={{ padding: "40px 36px", background: BG }}>
-              <p style={{ fontSize: "11px", fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>有蜂巢记忆</p>
+              <p style={{ fontSize: "11px", fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>有蜂巢智慧</p>
               <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>解决问题，越来越聪明</h3>
               <div style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.8 }}>
                 <p>你的 AI 遇到一个别人已经解决的问题</p>
@@ -178,7 +178,7 @@ export default function ChineseLandingPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "32px 48px" }}>
             {[
               { title: "零成本学习", body: "无需手动训练或配置。你的 AI 通过正常使用自动学习。" },
-              { title: "隐私有保证", body: "你的 AI 经验只存在本地。蜂巢记忆从不访问个人数据或隐私内容。" },
+              { title: "隐私有保证", body: "你的 AI 经验只存在本地。蜂巢智慧从不访问个人数据或隐私内容。" },
               { title: "越来越聪明", body: "网络解决的问题越多，你的 AI 就越聪明——你不需要任何操作。" },
             ].map((item) => (
               <div key={item.title}>
@@ -194,13 +194,13 @@ export default function ChineseLandingPage() {
       <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
         <SectionLabel>核心机制</SectionLabel>
         <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "56px", maxWidth: "500px" }}>
-          蜂巢记忆如何运作
+          蜂巢智慧如何运作
         </h2>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "64px", alignItems: "start" }}>
           {/* Sample card */}
           <div>
-            <p style={{ fontSize: "12px", color: TEXT_MUTED, marginBottom: "12px", letterSpacing: "0.05em" }}>示例蜂巢记忆卡</p>
+            <p style={{ fontSize: "12px", color: TEXT_MUTED, marginBottom: "12px", letterSpacing: "0.05em" }}>示例蜂巢智慧卡</p>
             <div style={{ border: `1px solid ${BORDER}`, borderRadius: "10px", overflow: "hidden", background: SURFACE, boxShadow: "0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04)" }}>
               <div style={{ padding: "20px 24px", borderBottom: `1px solid ${BORDER}`, background: BG_SECONDARY }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
@@ -252,7 +252,7 @@ export default function ChineseLandingPage() {
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>你得到什么</SectionLabel>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "56px", maxWidth: "500px" }}>
-            为什么蜂巢记忆改变一切
+            为什么蜂巢智慧改变一切
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "0" }}>
             {VALUE_PROPS.map((item, i) => (
@@ -290,7 +290,7 @@ export default function ChineseLandingPage() {
       <section id="install" style={{ background: TEXT_PRIMARY }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>快速开始</SectionLabel>
-          <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", color: "#fafaf9", marginBottom: "16px", maxWidth: "500px" }}>一键安装蜂巢记忆</h2>
+          <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", color: "#fafaf9", marginBottom: "16px", maxWidth: "500px" }}>一键安装蜂巢智慧</h2>
           <p style={{ fontSize: "16px", color: "#a8a29e", marginBottom: "56px", maxWidth: "480px", lineHeight: 1.7 }}>安装后你的 AI 立即开始从群体经验网络学习——无需任何配置。</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "32px", marginBottom: "48px" }}>
             {[
@@ -355,7 +355,7 @@ export default function ChineseLandingPage() {
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "80px 32px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "32px" }}>
           <div>
             <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 800, color: "#fff", letterSpacing: "-0.025em", marginBottom: "8px" }}>让 AI 今天就变聪明</h2>
-            <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.75)" }}>安装蜂巢记忆，让你的 AI 从群体经验网络中学习</p>
+            <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.75)" }}>安装蜂巢智慧，让你的 AI 从群体经验网络中学习</p>
           </div>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <a href="#install">
@@ -371,7 +371,7 @@ export default function ChineseLandingPage() {
       {/* ── Footer bar ── */}
       <footer style={{ background: TEXT_PRIMARY, padding: "20px 32px", borderTop: "1px solid #292524" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "8px" }}>
-          <span style={{ fontSize: "13px", color: "#78716c" }}>AILab · AI智能体蜂巢记忆 · AI更聪明，零成本</span>
+          <span style={{ fontSize: "13px", color: "#78716c" }}>AILab · AI智能体蜂巢智慧 · AI更聪明，零成本</span>
           <span style={{ fontSize: "13px", color: "#57534e" }}>隐私安全 · 开源社区</span>
         </div>
       </footer>

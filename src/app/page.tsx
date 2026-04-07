@@ -19,7 +19,7 @@ const SAMPLE_CARD = {
   id: "EC-001",
   category: "AI Assistant",
   problem: "AI assistant always gives vague, generic responses instead of professional advice for specific scenarios",
-  solution: "Hive Memory provides specific scenario context and confidence scores, enabling AI to give more targeted answers",
+  solution: "蜂巢智慧 provides specific scenario context and confidence scores, enabling AI to give more targeted answers",
   confidence: 92,
   tags: ["Prompt Engineering", "Scenario-based", "Confidence"],
   yaml: `name: Scenario-Based AI Assistant
@@ -37,9 +37,9 @@ response:
 
 const FEATURES = [
   { label: "Your AI Gets Smarter Automatically", desc: "No manual learning needed. When your AI encounters problems, it automatically learns from the collective experience network—so you get more capable AI without any extra effort." },
-  { label: "Preserves Your AI's Personality", desc: "Hive Memory only adds skills and knowledge. It never rewrites your AI's core personality or style. Your AI stays uniquely yours—just more capable over time." },
+  { label: "Preserves Your AI's Personality", desc: "蜂巢智慧 only adds skills and knowledge. It never rewrites your AI's core personality or style. Your AI stays uniquely yours—just more capable over time." },
   { label: "Your AI Solves Harder Problems", desc: "When your AI faces a tough problem, it can tap into millions of solved experiences from the network. The hardest problems become solvable." },
-  { label: "Private & Secure", desc: "Your AI's experience is stored locally. Hive Memory never accesses personal data, financial information, or private content. Zero privacy risk, zero property risk." },
+  { label: "Private & Secure", desc: "Your AI's experience is stored locally. 蜂巢智慧 never accesses personal data, financial information, or private content. Zero privacy risk, zero property risk." },
 ];
 
 const VALUE_PROPS = [
@@ -49,7 +49,7 @@ const VALUE_PROPS = [
 ];
 
 const UPDATES = [
-  { date: "2026-04-07", text: "Hive Memory platform launched", tag: "New Feature" },
+  { date: "2026-04-07", text: "蜂巢智慧 platform launched", tag: "New Feature" },
   { date: "2026-04-05", text: "Added confidence visualization", tag: "Update" },
   { date: "2026-04-01", text: "YAML import/export support", tag: "Update" },
   { date: "2026-03-28", text: "First experience cards online", tag: "Content" },
@@ -100,7 +100,7 @@ export default function EnglishLandingPage() {
         <div style={{ marginBottom: "24px" }}>
           <span style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontSize: "13px", color: TEXT_SECONDARY, background: BG_SECONDARY, border: `1px solid ${BORDER}`, borderRadius: "100px", padding: "4px 14px" }}>
             <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: ACCENT, display: "inline-block" }} />
-            AI Agent Hive Memory · Beta
+            AI Agent 蜂巢智慧 · Beta
           </span>
         </div>
 
@@ -122,7 +122,7 @@ export default function EnglishLandingPage() {
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
           <a href="#install">
             <Button size="lg" style={{ background: ACCENT, color: "#fff", border: "none", height: "48px", padding: "0 28px", fontWeight: 600, fontSize: "15px" }}>
-              Install Hive Memory
+              Install 蜂巢智慧
             </Button>
           </a>
           <Link href="/experiences">
@@ -142,17 +142,17 @@ export default function EnglishLandingPage() {
         </div>
       </section>
 
-      {/* ── What is Hive Memory ── */}
+      {/* ── What is 蜂巢智慧 ── */}
       <section style={{ background: SURFACE, borderTop: `1px solid ${BORDER}`, borderBottom: `1px solid ${BORDER}` }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>Concept</SectionLabel>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "48px", maxWidth: "600px" }}>
-            What is AI Agent Hive Memory
+            What is AI Agent 蜂巢智慧
           </h2>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "0", border: `1px solid ${BORDER}`, borderRadius: "12px", overflow: "hidden", marginBottom: "56px" }}>
             <div style={{ padding: "40px 36px", borderRight: `1px solid ${BORDER}` }}>
-              <p style={{ fontSize: "11px", fontWeight: 700, color: TEXT_MUTED, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>Without Hive Memory</p>
+              <p style={{ fontSize: "11px", fontWeight: 700, color: TEXT_MUTED, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>Without 蜂巢智慧</p>
               <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>Same Problems, Repeated Mistakes</h3>
               <div style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.8 }}>
                 <p>Your AI faces a problem someone already solved</p>
@@ -163,7 +163,7 @@ export default function EnglishLandingPage() {
               </div>
             </div>
             <div style={{ padding: "40px 36px", background: BG }}>
-              <p style={{ fontSize: "11px", fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>With Hive Memory</p>
+              <p style={{ fontSize: "11px", fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>With 蜂巢智慧</p>
               <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>Smarter with Every Problem Solved</h3>
               <div style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.8 }}>
                 <p>Your AI faces a problem someone already solved</p>
@@ -178,7 +178,7 @@ export default function EnglishLandingPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "32px 48px" }}>
             {[
               { title: "Zero Effort Learning", body: "No need to manually train or configure. Your AI learns automatically through normal use." },
-              { title: "Privacy Guaranteed", body: "Your AI's experience stays local. Hive Memory never accesses personal data or private content." },
+              { title: "Privacy Guaranteed", body: "Your AI's experience stays local. 蜂巢智慧 never accesses personal data or private content." },
               { title: "Smarter Every Day", body: "The more problems solved by the network, the smarter your AI becomes—without any action from you." },
             ].map((item) => (
               <div key={item.title}>
@@ -194,13 +194,13 @@ export default function EnglishLandingPage() {
       <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
         <SectionLabel>Core Mechanism</SectionLabel>
         <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "56px", maxWidth: "500px" }}>
-          How Hive Memory Works
+          How 蜂巢智慧 Works
         </h2>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "64px", alignItems: "start" }}>
           {/* Sample card */}
           <div>
-            <p style={{ fontSize: "12px", color: TEXT_MUTED, marginBottom: "12px", letterSpacing: "0.05em" }}>Sample Hive Memory Card</p>
+            <p style={{ fontSize: "12px", color: TEXT_MUTED, marginBottom: "12px", letterSpacing: "0.05em" }}>Sample 蜂巢智慧 Card</p>
             <div style={{ border: `1px solid ${BORDER}`, borderRadius: "10px", overflow: "hidden", background: SURFACE, boxShadow: "0 1px 3px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04)" }}>
               <div style={{ padding: "20px 24px", borderBottom: `1px solid ${BORDER}`, background: BG_SECONDARY }}>
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start" }}>
@@ -252,7 +252,7 @@ export default function EnglishLandingPage() {
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>What You Get</SectionLabel>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "56px", maxWidth: "500px" }}>
-            Why Hive Memory Changes Everything
+            Why 蜂巢智慧 Changes Everything
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "0" }}>
             {VALUE_PROPS.map((item, i) => (
@@ -290,7 +290,7 @@ export default function EnglishLandingPage() {
       <section id="install" style={{ background: TEXT_PRIMARY }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>Quick Start</SectionLabel>
-          <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", color: "#fafaf9", marginBottom: "16px", maxWidth: "500px" }}>Install Hive Memory in One Click</h2>
+          <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", color: "#fafaf9", marginBottom: "16px", maxWidth: "500px" }}>Install 蜂巢智慧 in One Click</h2>
           <p style={{ fontSize: "16px", color: "#a8a29e", marginBottom: "56px", maxWidth: "480px", lineHeight: 1.7 }}>Your AI starts learning from the collective experience network immediately after installation—no configuration needed.</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "32px", marginBottom: "48px" }}>
             {[
@@ -355,7 +355,7 @@ export default function EnglishLandingPage() {
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "80px 32px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "32px" }}>
           <div>
             <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 800, color: "#fff", letterSpacing: "-0.025em", marginBottom: "8px" }}>Make Your AI Smarter Today</h2>
-            <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.75)" }}>Install Hive Memory and let your AI learn from the collective experience network</p>
+            <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.75)" }}>Install 蜂巢智慧 and let your AI learn from the collective experience network</p>
           </div>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <a href="#install">
@@ -371,7 +371,7 @@ export default function EnglishLandingPage() {
       {/* ── Footer bar ── */}
       <footer style={{ background: TEXT_PRIMARY, padding: "20px 32px", borderTop: "1px solid #292524" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "8px" }}>
-          <span style={{ fontSize: "13px", color: "#78716c" }}>AILab · AI Agent Hive Memory · Smarter AI, Zero Effort</span>
+          <span style={{ fontSize: "13px", color: "#78716c" }}>AILab · AI Agent 蜂巢智慧 · Smarter AI, Zero Effort</span>
           <span style={{ fontSize: "13px", color: "#57534e" }}>Private · Secure · Open Source</span>
         </div>
       </footer>
