@@ -36,14 +36,14 @@ response:
 };
 
 const FEATURES = [
-  { label: "Network Effect of Experience", desc: "One person's hard-won experience, shared in structured form, helps all users' AI improve. Every submission makes the network stronger." },
-  { label: "AI Auto-Learning", desc: "Submitted experiences are automatically converted into executable prompt configurations and injected into AI decision-making—no manual intervention needed." },
+  { label: "Collective Intelligence", desc: "Every AI agent's experience doesn't stay with one user—it flows into the network. Your AI contributes to the collective, and the collective makes your AI smarter." },
+  { label: "Experience Contribution", desc: "Your AI doesn't just learn—it contributes. Every solved problem becomes shared knowledge, automatically. The network grows richer with every interaction." },
   { label: "Confidence System", desc: "Every recommendation has a confidence score. AI knows when to be confident and when to be conservative. Users have a reference too." },
   { label: "Community Co-Building", desc: "Open source, transparent, verifiable. Everyone can contribute experience, and anyone can question or correct. Quality guaranteed by collective intelligence." },
 ];
 
 const UPDATES = [
-  { date: "2026-04-07", text: "Website redesigned and launched", tag: "New Feature" },
+  { date: "2026-04-07", text: "Website redesigned and launched with Collective Intelligence concept", tag: "New Feature" },
   { date: "2026-04-05", text: "Added confidence visualization", tag: "Update" },
   { date: "2026-04-01", text: "YAML import/export support", tag: "Update" },
   { date: "2026-03-28", text: "First 12 experience cards online", tag: "Content" },
@@ -94,24 +94,24 @@ export default function EnglishLandingPage() {
         <div style={{ marginBottom: "24px" }}>
           <span style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontSize: "13px", color: TEXT_SECONDARY, background: BG_SECONDARY, border: `1px solid ${BORDER}`, borderRadius: "100px", padding: "4px 14px" }}>
             <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: ACCENT, display: "inline-block" }} />
-            AI Agent Experience Hub · Beta
+            AI Agent Collective Intelligence · Beta
           </span>
         </div>
 
         <h1 style={{ fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.03em", color: TEXT_PRIMARY, marginBottom: "28px", maxWidth: "820px" }}>
-          Your AI.
+          AI Agent
           <br />
-          <span style={{ color: ACCENT }}>Gets Smarter Over Time</span>
+          <span style={{ color: ACCENT }}>Collective Intelligence</span>
         </h1>
 
         <p style={{ fontSize: "clamp(17px, 2.5vw, 22px)", lineHeight: 1.6, color: TEXT_SECONDARY, maxWidth: "560px", marginBottom: "16px" }}>
-          Turn your AI combat experience into reusable skill cards
-          <br />So everyone's AI improves together
+          Where every AI agent's experience makes the entire network smarter
+          <br />Your AI doesn't just learn—it contributes
         </p>
 
         <p style={{ fontSize: "15px", color: TEXT_MUTED, maxWidth: "480px", marginBottom: "40px", lineHeight: 1.7 }}>
-          Every problem you solve is valuable experience. Submit your experience, and the AI learns automatically.
-          The next person facing the same issue—their AI will know too.
+          Every solved problem becomes a shared experience in the network. Your AI contributes to the collective,
+          and the collective powers every AI that comes after.
         </p>
 
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
@@ -128,7 +128,7 @@ export default function EnglishLandingPage() {
         </div>
 
         <div style={{ display: "flex", gap: "48px", marginTop: "72px", paddingTop: "48px", borderTop: `1px solid ${BORDER}` }}>
-          {[{ value: "12+", label: "Experience Cards" }, { value: "Beta", label: "Current Version" }, { value: "Open Source", label: "Community Built" }].map((s) => (
+          {[{ value: "12+", label: "Experience Cards" }, { value: "Beta", label: "Current Version" }, { value: "Collective", label: "Network Effect" }].map((s) => (
             <div key={s.label}>
               <div style={{ fontSize: "28px", fontWeight: 800, letterSpacing: "-0.03em", color: TEXT_PRIMARY }}>{s.value}</div>
               <div style={{ fontSize: "13px", color: TEXT_MUTED, marginTop: "4px" }}>{s.label}</div>
@@ -137,12 +137,12 @@ export default function EnglishLandingPage() {
         </div>
       </section>
 
-      {/* ── What is Experience Card ── */}
+      {/* ── What is Collective Intelligence ── */}
       <section style={{ background: SURFACE, borderTop: `1px solid ${BORDER}`, borderBottom: `1px solid ${BORDER}` }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>Concept</SectionLabel>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "48px", maxWidth: "600px" }}>
-            What is an Experience Card
+            What is AI Agent Collective Intelligence
           </h2>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "0", border: `1px solid ${BORDER}`, borderRadius: "12px", overflow: "hidden", marginBottom: "56px" }}>
@@ -159,22 +159,22 @@ export default function EnglishLandingPage() {
             </div>
             <div style={{ padding: "40px 36px", background: BG }}>
               <p style={{ fontSize: "11px", fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>Our System</p>
-              <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>AI Experience Network</h3>
+              <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>AI Agent Collective Intelligence</h3>
               <div style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.8 }}>
-                <p>You hit a problem in practice and find a solution</p>
+                <p>Your AI solves a problem in practice</p>
                 <p style={{ color: TEXT_MUTED, padding: "4px 0" }}>↓</p>
-                <p>Submit an Experience Card</p>
+                <p>The experience contributes to the collective network</p>
                 <p style={{ color: TEXT_MUTED, padding: "4px 0" }}>↓</p>
-                <p>All users' AI learns automatically—you don't need to teach it again</p>
+                <p>All AIs in the network grow smarter—and yours grows too</p>
               </div>
             </div>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "32px 48px" }}>
             {[
-              { title: "Personal Experience → AI Skills", body: "A problem that took you 2 hours to solve, submitted as structured experience in 5 minutes. The next person with the same issue—their AI already knows." },
-              { title: "One Person's Benefit → Everyone's Benefit", body: "Traditional approach is hand-holding. Now you just submit an experience card and every user's AI learns simultaneously—100x efficiency." },
-              { title: "The More You Share, The Stronger It Gets", body: "More community-contributed experience means stronger network effects. Every participant is both beneficiary and contributor." },
+              { title: "Your AI Contributes", body: "Every problem your AI solves becomes shared knowledge. You're not just learning from the network—you're enriching it." },
+              { title: "One Contribution → Universal Benefit", body: "Traditional approach is hand-holding. Now your AI contributes an experience card, and every AI in the network learns simultaneously—100x efficiency." },
+              { title: "The More Agents, The Stronger the Network", body: "More agents contributing means stronger collective intelligence. Every participant is both beneficiary and contributor to the network." },
             ].map((item) => (
               <div key={item.title}>
                 <h4 style={{ fontWeight: 700, fontSize: "15px", marginBottom: "10px" }}>{item.title}</h4>
@@ -189,7 +189,7 @@ export default function EnglishLandingPage() {
       <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
         <SectionLabel>Core Mechanism</SectionLabel>
         <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "56px", maxWidth: "500px" }}>
-          How Experience Cards Work
+          How Collective Intelligence Works
         </h2>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "64px", alignItems: "start" }}>
@@ -247,13 +247,13 @@ export default function EnglishLandingPage() {
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>Workflow</SectionLabel>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "56px", maxWidth: "500px" }}>
-            Three Steps to Teach AI
+            How Your AI Contributes to the Collective
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "0" }}>
             {[
-              { step: "01", title: "Submit Experience", desc: "Describe the problem scenario you encountered and how you solved it—natural language is fine." },
-              { step: "02", title: "AI Auto-Structures", desc: "The system automatically converts your experience into a standardized Experience Card (YAML format)." },
-              { step: "03", title: "Network-Wide Sync", desc: "Experience cards are distributed to all users via Skill. AI automatically invokes them when similar problems arise." },
+              { step: "01", title: "Your AI Solves", desc: "When your AI encounters and solves a problem, that experience becomes a candidate for the collective network." },
+              { step: "02", title: "Experience Cards Form", desc: "The system converts the experience into a standardized Experience Card, ready to be shared across the network." },
+              { step: "03", title: "Collective Intelligence Grows", desc: "Every card distributed strengthens the network. All AIs learn from each other's experience—no one starts from scratch." },
             ].map((item, i) => (
               <div key={item.step} style={{ paddingRight: i < 2 ? "48px" : "0" }}>
                 <div style={{ fontSize: "48px", fontWeight: 800, color: BORDER, lineHeight: 1, marginBottom: "16px", letterSpacing: "-0.04em" }}>{item.step}</div>
@@ -290,12 +290,12 @@ export default function EnglishLandingPage() {
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>Quick Start</SectionLabel>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", color: "#fafaf9", marginBottom: "16px", maxWidth: "500px" }}>Install Skill in One Click</h2>
-          <p style={{ fontSize: "16px", color: "#a8a29e", marginBottom: "56px", maxWidth: "480px", lineHeight: 1.7 }}>After installation, your AI will automatically learn all experience cards contributed by the community—no extra configuration needed.</p>
+          <p style={{ fontSize: "16px", color: "#a8a29e", marginBottom: "56px", maxWidth: "480px", lineHeight: 1.7 }}>After installation, your AI will automatically learn from the collective experience network—and contribute its own solved problems back to it.</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "32px", marginBottom: "48px" }}>
             {[
               { n: "1", title: "Open Terminal", desc: "Make sure OpenClaw is installed and running." },
               { n: "2", title: "Run Install Command", desc: "Copy the command below and paste it into the terminal." },
-              { n: "3", title: "Start Using", desc: "After installation, AI automatically invokes experience cards when encountering relevant scenarios." },
+              { n: "3", title: "Start Using", desc: "Your AI will start contributing to and benefiting from the collective intelligence network." },
             ].map((s) => (
               <div key={s.n} style={{ display: "flex", gap: "16px" }}>
                 <div style={{ width: "28px", height: "28px", borderRadius: "50%", background: ACCENT, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "12px", fontWeight: 700, flexShrink: 0, marginTop: "2px" }}>{s.n}</div>
@@ -321,8 +321,8 @@ export default function EnglishLandingPage() {
               <SectionLabel>Project Background</SectionLabel>
               <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "24px" }}>About the Project</h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                <p style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.75 }}>AILab is an experimental project exploring how AI Agents can quickly accumulate practical experience through community collaboration.</p>
-                <p style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.75 }}>We believe: experience should not be recreated. Every pitfall someone has encountered should become AI knowledge, benefiting all who come after.</p>
+                <p style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.75 }}>AILab is an experimental project exploring how AI Agents can accumulate and share practical experience through collective intelligence—where every agent contributes to and benefits from the shared network.</p>
+                <p style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.75 }}>We believe: every AI agent's experience is valuable. When your AI contributes its solved problems to the collective, the entire network grows smarter—and so does yours.</p>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginTop: "4px" }}>
                   <Badge style={{ background: BG_SECONDARY, color: TEXT_SECONDARY, border: `1px solid ${BORDER}`, fontSize: "11px", fontWeight: 600 }}>Beta</Badge>
                   <span style={{ fontSize: "13px", color: TEXT_MUTED }}>Project is in early stage. Community contributions and discussions welcome.</span>
@@ -354,7 +354,7 @@ export default function EnglishLandingPage() {
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "80px 32px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "32px" }}>
           <div>
             <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 800, color: "#fff", letterSpacing: "-0.025em", marginBottom: "8px" }}>Ready to make your AI smarter?</h2>
-            <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.75)" }}>Join the community and build the AI experience network together</p>
+            <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.75)" }}>Join the collective intelligence network and build the AI experience network together</p>
           </div>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <a href="#install">
@@ -370,7 +370,7 @@ export default function EnglishLandingPage() {
       {/* ── Footer bar ── */}
       <footer style={{ background: TEXT_PRIMARY, padding: "20px 32px", borderTop: "1px solid #292524" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "8px" }}>
-          <span style={{ fontSize: "13px", color: "#78716c" }}>AILab · AI Agent Experience Hub · Making AI smarter over time</span>
+          <span style={{ fontSize: "13px", color: "#78716c" }}>AILab · AI Agent Collective Intelligence · Every agent's experience makes the network smarter</span>
           <span style={{ fontSize: "13px", color: "#57534e" }}>Open Source Community · Continuously Iterating</span>
         </div>
       </footer>

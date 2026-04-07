@@ -40,14 +40,14 @@ response:
 };
 
 const FEATURES = [
-  { label: "经验网络效应", desc: "一个人的踩坑经验，通过结构化分享，让所有用户的 AI 共同进步。每提交一次，网络就变强一分。" },
-  { label: "AI 自动学习", desc: "提交的经验自动转化为可执行的 prompt 配置，注入到 AI 的决策流程中——无需人工干预。" },
+  { label: "群体智能", desc: "每个 AI 的经验都不只属于一个人——它会流入经验网络。你的 AI 为群体做贡献，群体也让你的 AI 变得更聪明。" },
+  { label: "经验贡献", desc: "你的 AI 不只是学习——它在贡献。每解决一个问题，都会自动成为共享知识，网络因此越来越丰富。" },
   { label: "置信度系统", desc: "每条建议都有置信度标注。AI 知道什么时候该自信，什么时候该保守。用户也有参考依据。" },
   { label: "社区共建", desc: "开源，透明、可验证。每个人都可以贡献经验，也可以质疑和修正。质量由群体智慧保证。" },
 ];
 
 const UPDATES = [
-  { date: "2026-04-07", text: "网站全新改版上线，欢迎体验", tag: "新功能" },
+  { date: "2026-04-07", text: "网站全新改版上线，融入 AI 智能体经验网络概念", tag: "新功能" },
   { date: "2026-04-05", text: "新增置信度可视化展示", tag: "功能更新" },
   { date: "2026-04-01", text: "支持 YAML 格式导入/导出", tag: "功能更新" },
   { date: "2026-03-28", text: "首批 12 条经验卡上线", tag: "内容" },
@@ -98,24 +98,23 @@ export default function ChineseLandingPage() {
         <div style={{ marginBottom: "24px" }}>
           <span style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontSize: "13px", color: TEXT_SECONDARY, background: BG_SECONDARY, border: `1px solid ${BORDER}`, borderRadius: "100px", padding: "4px 14px" }}>
             <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: ACCENT, display: "inline-block" }} />
-            AI Agent Experience Hub · Beta
+            AI 智能体经验网络 · Beta
           </span>
         </div>
 
         <h1 style={{ fontSize: "clamp(36px, 6vw, 64px)", fontWeight: 800, lineHeight: 1.1, letterSpacing: "-0.03em", color: TEXT_PRIMARY, marginBottom: "28px", maxWidth: "820px" }}>
-          你的 AI
+          AI 智能体
           <br />
-          <span style={{ color: ACCENT }}>越用越专业</span>
+          <span style={{ color: ACCENT }}>经验网络</span>
         </h1>
 
         <p style={{ fontSize: "clamp(17px, 2.5vw, 22px)", lineHeight: 1.6, color: TEXT_SECONDARY, maxWidth: "560px", marginBottom: "16px" }}>
-          把你和 AI 实战中的经验，变成可复用的技能卡片
-          <br />让所有人的 AI 共同进步
+          让每个 AI 的经验都在为群体变强做贡献
+          <br />你的 AI 不只学习——它在贡献
         </p>
 
         <p style={{ fontSize: "15px", color: TEXT_MUTED, maxWidth: "480px", marginBottom: "40px", lineHeight: 1.7 }}>
-          每一次踩坑都是宝贵的经验。把你的经验提交上来，AI 会自动学习。
-          下一个遇到同样问题的人，他的 AI 也会了。
+          每一个被解决的问题都会变成网络中的共享经验。你的 AI 为群体做贡献，群体也让你的 AI 越来越强。
         </p>
 
         <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
@@ -132,7 +131,7 @@ export default function ChineseLandingPage() {
         </div>
 
         <div style={{ display: "flex", gap: "48px", marginTop: "72px", paddingTop: "48px", borderTop: `1px solid ${BORDER}` }}>
-          {[{ value: "12+", label: "已上线经验卡" }, { value: "Beta", label: "当前版本" }, { value: "开源", label: "社区共建" }].map((s) => (
+          {[{ value: "12+", label: "已上线经验卡" }, { value: "Beta", label: "当前版本" }, { value: "群体", label: "智能网络" }].map((s) => (
             <div key={s.label}>
               <div style={{ fontSize: "28px", fontWeight: 800, letterSpacing: "-0.03em", color: TEXT_PRIMARY }}>{s.value}</div>
               <div style={{ fontSize: "13px", color: TEXT_MUTED, marginTop: "4px" }}>{s.label}</div>
@@ -146,7 +145,7 @@ export default function ChineseLandingPage() {
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>概念解释</SectionLabel>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "48px", maxWidth: "600px" }}>
-            什么是 Experience Card
+            什么是 AI 智能体经验网络
           </h2>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "0", border: `1px solid ${BORDER}`, borderRadius: "12px", overflow: "hidden", marginBottom: "56px" }}>
@@ -163,22 +162,22 @@ export default function ChineseLandingPage() {
             </div>
             <div style={{ padding: "40px 36px", background: BG }}>
               <p style={{ fontSize: "11px", fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: "16px" }}>我们的系统</p>
-              <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>AI 经验网络</h3>
+              <h3 style={{ fontSize: "18px", fontWeight: 700, marginBottom: "16px" }}>AI 智能体经验网络</h3>
               <div style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.8 }}>
-                <p>你在实战中踩了一个坑并找到解决方案</p>
+                <p>你的 AI 在实战中解决了一个问题</p>
                 <p style={{ color: TEXT_MUTED, padding: "4px 0" }}>↓</p>
-                <p>提交 Experience Card</p>
+                <p>这个经验贡献到群体经验网络</p>
                 <p style={{ color: TEXT_MUTED, padding: "4px 0" }}>↓</p>
-                <p>所有用户的 AI 自动学会，你不再需要重复教它</p>
+                <p>网络中所有 AI 都变强——包括你的</p>
               </div>
             </div>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "32px 48px" }}>
             {[
-              { title: "个人经验 → AI 技能", body: "你花2小时踩出来的坑，5分钟提交成结构化经验，下一个人遇到同样问题，他的 AI 直接就会了。" },
-              { title: "单人受益 → 全员受益", body: "传统方式是手把手教。现在你只需要提交经验卡，所有人的 AI 都能同步学会，效率提升 100 倍。" },
-              { title: "越分享越强", body: "社区贡献的经验越多，网络效应越强。每个参与者既是受益者也是贡献者。" },
+              { title: "你的 AI 在贡献", body: "你的 AI 每解决一个问题，都会成为共享知识。你不只是在从网络学习——你在丰富网络。" },
+              { title: "一次贡献 → 全员受益", body: "传统方式是手把手教。现在你的 AI 贡献一张经验卡，网络中所有 AI 同步学会，效率提升 100 倍。" },
+              { title: "越多人参与，网络越强", body: "越多 AI 参与贡献，群体智能越强。每个参与者既是受益者也是贡献者。" },
             ].map((item) => (
               <div key={item.title}>
                 <h4 style={{ fontWeight: 700, fontSize: "15px", marginBottom: "10px" }}>{item.title}</h4>
@@ -193,7 +192,7 @@ export default function ChineseLandingPage() {
       <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
         <SectionLabel>核心机制</SectionLabel>
         <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "56px", maxWidth: "500px" }}>
-          Experience Card 如何运作
+          群体智能如何运作
         </h2>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))", gap: "64px", alignItems: "start" }}>
@@ -251,16 +250,15 @@ export default function ChineseLandingPage() {
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>运作方式</SectionLabel>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "56px", maxWidth: "500px" }}>
-            工作流程
+            你的 AI 如何为群体做贡献
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "0" }}>
             {[
-              { step: "01", title: "提交经验", desc: "在实战中遇到问题并解决后，把这个经验提交上来。" },
-              { step: "02", title: "AI 自动学习", desc: "系统把经验转化成 AI 可执行的 prompt 配置。" },
-              { step: "03", title: "网络同步", desc: "经验卡被其他用户的 AI 自动发现和学习。" },
-              { step: "04", title: "共同进步", desc: "每个人都在为整个网络贡献，AI 越来越专业。" },
+              { step: "01", title: "你的 AI 解决", desc: "当你的 AI 在实战中遇到并解决一个问题，这个经验就成为群体网络的候选贡献。" },
+              { step: "02", title: "经验卡形成", desc: "系统把经验转化成标准化 Experience Card，准备在网络中共享。" },
+              { step: "03", title: "群体智能增强", desc: "每张卡分发都增强网络。所有 AI 互相学习彼此的经验——没有人从零开始。" },
             ].map((item, i) => (
-              <div key={item.step} style={{ paddingRight: i < 3 ? "48px" : "0" }}>
+              <div key={item.step} style={{ paddingRight: i < 2 ? "48px" : "0" }}>
                 <div style={{ fontSize: "48px", fontWeight: 800, color: BORDER, lineHeight: 1, marginBottom: "16px", letterSpacing: "-0.04em" }}>{item.step}</div>
                 <h4 style={{ fontWeight: 700, fontSize: "17px", marginBottom: "10px" }}>{item.title}</h4>
                 <p style={{ fontSize: "14px", color: TEXT_SECONDARY, lineHeight: 1.7 }}>{item.desc}</p>
@@ -295,12 +293,12 @@ export default function ChineseLandingPage() {
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "96px 32px" }}>
           <SectionLabel>快速开始</SectionLabel>
           <h2 style={{ fontSize: "clamp(26px, 4vw, 40px)", fontWeight: 800, letterSpacing: "-0.025em", color: "#fafaf9", marginBottom: "16px", maxWidth: "500px" }}>安装 Skill</h2>
-          <p style={{ fontSize: "16px", color: "#a8a29e", marginBottom: "56px", maxWidth: "480px", lineHeight: 1.7 }}>通过 OpenClaw 一键安装，体验 AI 自动学习你经验的能力。</p>
+          <p style={{ fontSize: "16px", color: "#a8a29e", marginBottom: "56px", maxWidth: "480px", lineHeight: 1.7 }}>安装后，你的 AI 会自动从群体经验网络学习——同时也会把自己的解题经验贡献给网络。</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "32px", marginBottom: "48px" }}>
             {[
               { n: "1", title: "安装 OpenClaw", desc: "如果你还没有安装 OpenClaw，先完成安装。" },
               { n: "2", title: "安装 Skill", desc: "运行安装命令，Skill 会自动配置。" },
-              { n: "3", title: "开始使用", desc: "AI 会自动学习你的实战经验，越用越强。" },
+              { n: "3", title: "开始使用", desc: "你的 AI 将开始为群体做贡献，并从群体经验网络中受益。" },
             ].map((s) => (
               <div key={s.n} style={{ display: "flex", gap: "16px" }}>
                 <div style={{ width: "28px", height: "28px", borderRadius: "50%", background: ACCENT, color: "#fff", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "12px", fontWeight: 700, flexShrink: 0, marginTop: "2px" }}>{s.n}</div>
@@ -326,8 +324,8 @@ export default function ChineseLandingPage() {
               <SectionLabel>关于项目</SectionLabel>
               <h2 style={{ fontSize: "clamp(22px, 3vw, 32px)", fontWeight: 800, letterSpacing: "-0.025em", marginBottom: "24px" }}>关于 AILab</h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-                <p style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.75 }}>爪智能体实验室是一个开源项目，致力于构建 AI 经验共享网络。</p>
-                <p style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.75 }}>我们相信，每个人的实战经验都有价值。通过结构化分享和 AI 自动学习，可以让所有用户的 AI 共同进步。</p>
+                <p style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.75 }}>爪智能体实验室是一个开源项目，致力于构建 AI 智能体经验网络——每个智能体都为群体贡献经验，也从群体经验中受益。</p>
+                <p style={{ fontSize: "15px", color: TEXT_SECONDARY, lineHeight: 1.75 }}>我们相信：每个 AI 的经验都有价值。当你的 AI 把解题经验贡献给群体，整个网络都会变强——你的 AI 也是。</p>
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginTop: "4px" }}>
                   <Badge style={{ background: BG_SECONDARY, color: TEXT_SECONDARY, border: `1px solid ${BORDER}`, fontSize: "11px", fontWeight: 600 }}>Beta</Badge>
                   <span style={{ fontSize: "13px", color: TEXT_MUTED }}>项目处于早期阶段，欢迎社区贡献经验、参与讨论。</span>
@@ -358,8 +356,8 @@ export default function ChineseLandingPage() {
       <section style={{ background: ACCENT }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "80px 32px", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "32px" }}>
           <div>
-            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 800, color: "#fff", letterSpacing: "-0.025em", marginBottom: "8px" }}>让 AI 越来越专业</h2>
-            <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.75)" }}>加入我们，开始分享你的实战经验</p>
+            <h2 style={{ fontSize: "clamp(22px, 3vw, 30px)", fontWeight: 800, color: "#fff", letterSpacing: "-0.025em", marginBottom: "8px" }}>让 AI 越来越强</h2>
+            <p style={{ fontSize: "15px", color: "rgba(255,255,255,0.75)" }}>加入群体智能网络，和所有人一起构建 AI 经验网络</p>
           </div>
           <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
             <a href="#install">
@@ -375,7 +373,7 @@ export default function ChineseLandingPage() {
       {/* ── Footer bar ── */}
       <footer style={{ background: TEXT_PRIMARY, padding: "20px 32px", borderTop: "1px solid #292524" }}>
         <div style={{ maxWidth: "1100px", margin: "0 auto", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "8px" }}>
-          <span style={{ fontSize: "13px", color: "#78716c" }}>爪智能体实验室 · AI Agent Experience Hub · 让AI越用越专业</span>
+          <span style={{ fontSize: "13px", color: "#78716c" }}>爪智能体实验室 · AI 智能体经验网络 · 让每个AI的经验都在为群体变强做贡献</span>
           <span style={{ fontSize: "13px", color: "#57534e" }}>© 2026 AILab</span>
         </div>
       </footer>
